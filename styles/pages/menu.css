@@ -1,0 +1,117 @@
+.hero::before {
+    background-image: url('../../images/menu_hero_image.jpg');
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(255, 250, 240, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    max-width: 50%;
+    background-color: transparent;
+    backdrop-filter: none;
+    text-align: center;
+}
+
+.menu {
+    background-color: floralwhite;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    grid-gap: 2rem;
+    padding: 5rem;
+    min-height: 100%;
+}
+
+.product-container {
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+    transform: scale(1.00);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+}
+
+.product-container:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2),
+                0 2px 6px rgba(0, 0, 0, 0.15); 
+    transform: scale(1.02);
+}
+
+.product-image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product-description {
+    margin: 0;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    .menu-grid {
+        padding: 2rem;
+    }
+
+    .product-image {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .product-name {
+        font-size: 1rem;
+    }
+
+    .product-description {
+        font-size: 0.8rem;
+    }
+
+    .product-price {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
+
+    .product-name {
+        font-size: 0.8rem;
+    }
+
+    .product-description {
+        font-size: 0.7rem;
+    }
+
+    .product-price {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,182 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu - ByteBrew</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora&display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="../styles/components/hero.css">
+      <link rel="stylesheet" href="../styles/base.css">
+      <link rel="stylesheet" href="../styles/components/header.css">
+      <link rel="stylesheet" href="../styles/components/footer.css">
+      <link rel="stylesheet" href="../styles/pages/menu.css">
+      <link rel="stylesheet" href="../styles/animations.css">
+  </head>
+  <body>
+    <section class="hero">
+      <div class="overlay"></div>
+      <header class="header flex">
+        <div class="logo-container flex">
+          <img class="logo" src="../images/logo-brown.png" alt="ByteBrew Coffee Shop Logo" />
+          <p><a class="shop-name" href="home.html">ByteBrew</a></p>
+        </div>
+        <nav class="navigation">
+          <ul class="big-nav nav-links flex">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <input type="checkbox" id="menu-toggle" hidden />
+          <label for="menu-toggle" class="hamburger-menu">&#9776</label>
+          <div class="small-nav nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+        </nav>
+      </header>
+      <div class="hero-content fade-up flex flex-column">
+        <h1 class="hero-title autoShow">Our Menu</h1>
+        <p class="description autoShow">Explore our carefully curated selection of coffee and treats, crafted with passion for true enthusiasts.</p>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="menu-grid">
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_1.jpg" alt="Classic Latte">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Classic Latte</p>
+            <p class="product-description">A smooth blend of espresso and steamed milk topped with velvety foam.</p>
+          </div>
+          <p class="product-price">$5</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_2.jpg" alt="Berry Scone">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Berry Scone</p>
+            <p class="product-description">Flaky and buttery, packed with fresh berries and served with jam.</p>
+          </div>
+          <p class="product-price">$3</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_3.jpg" alt="Iced Lemon Coffee">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Iced Lemon Coffee</p>
+            <p class="product-description">A refreshing twist with espresso, lemon slices, and ice.</p>
+          </div>
+          <p class="product-price">$6</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_4.jpg" alt="Matcha Latte">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Matcha Latte</p>
+            <p class="product-description">A creamy green tea latte with rich and earthy matcha flavors.</p>
+          </div>
+          <p class="product-price">$5</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_5.jpg" alt="Chocolate Chip Cookies">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Chocolate Chip Cookies</p>
+            <p class="product-description">Freshly baked cookies with gooey chocolate chips.</p>
+          </div>
+          <p class="product-price">$2</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_6.jpg" alt="Chocolate Raspberry Cake">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Chocolate Raspberry Cake</p>
+            <p class="product-description">A decadent chocolate cake topped with fresh raspberries.</p>
+          </div>
+          <p class="product-price">$4</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_7.jpg" alt="Hot Chocolate">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Hot Chocolate</p>
+            <p class="product-description">Rich and creamy, topped with whipped cream and chocolate drizzle.</p>
+          </div>
+          <p class="product-price">$4</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_8.jpg" alt="Caramel Frappuccino">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Caramel Frappuccino</p>
+            <p class="product-description">A sweet blend of coffee, caramel, and ice, topped with whipped cream.</p>
+          </div>
+          <p class="product-price">$5</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_9.jpg" alt="Buttery Croissant">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Buttery Croissant</p>
+            <p class="product-description">Flaky and golden, served fresh with a hint of butter.</p>
+          </div>
+          <p class="product-price">$3</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_10.jpg" alt="Cappuccino">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Cappuccino</p>
+            <p class="product-description">Rich espresso topped with frothy milk and a sprinkle of cocoa.</p>
+          </div>
+          <p class="product-price">$4</p>
+        </div>
+        <div class="product-container flex">
+          <img class="product-image" src="../images/menu_image_11.jpg" alt="Heart Latte">
+          <div class="product-content flex flex-column">
+            <p class="product-name">Heart Latte</p>
+            <p class="product-description">A latte made with love, featuring beautiful heart-shaped foam art.</p>
+          </div>
+          <p class="product-price">$5</p>
+        </div>
+      </div>
+    </section>
+    <footer class="flex flex-column">
+      <div class="upper-footer flex">
+        <div class="footer-logo">
+          <img class="logo" src="../images/logo-white.png" alt="ByteBrew Logo">
+          <p class="slogan">Brewing Connections, One Cup at a Time.</p>
+        </div>
+        <div class="footer-nav footer-container flex flex-column">
+          <p class="quick-links">Quick links</p>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="footer-container flex flex-column">
+          <p class="connect-with-us">Connect with us</p>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/instagram.svg" alt="Instagram"><a href="#">Instagram</a>
+            </div>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/facebook.svg" alt="Facebook"><a href="#">Facebook</a>
+            </div>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/twitter.svg" alt="Twitter"><a href="#">Twitter</a>
+            </div>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/linkedin.svg" alt="LinkedIn"><a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <form id="contact" class="subscribe" action="" method="">
+          <h3 class="title">Subscribe</h3>
+          <p>Subscribe for the latest updates!</p>
+          <label for="email"></label>
+          <input class="email" type="email" placeholder="Enter email address" title="Email address" name="email">
+          <input class="send-button" type="submit" value="Subscribe">
+        </form>
+      </div>
+      <div class="lower-footer flex flex-column">
+        <div class="info-container flex">
+          <div class="info flex"><img class="footer-icons" src="../images/location.svg" alt="Location"><p class="address">Börringevägen 10, 233 33 Svedala</p></div>
+          <div class="info flex"><img class="footer-icons" src="../images/phone.svg" alt="Phone"><p class="phone-number">76 123 45 67</p></div>
+          <div class="info flex"><img class="footer-icons" src="../images/email.svg" alt="Email"><p class="email-address">ByteBrew@gmail.com</p></div>
+        </div>
+        <p class="copyright">© 2024 ByteBrew. All rights reserved.</p>
+      </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+.header {
+    align-items: center;
+    justify-content: space-between;
+    max-height: 4rem;
+}
+
+.logo-container {
+    padding: 0.3rem;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 0.6rem;
+    height: 2.5rem;
+    padding-right: 0.6rem;
+}
+
+.shop-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation {
+    min-width: 50%;
+    text-align: right;
+}
+
+.nav-links {
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.nav-links a {
+    position: relative;
+    font-weight: bold;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(53, 15, 15);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    opacity: 1;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.small-nav {
+    display: none;
+    max-height: 0;
+    padding-inline: 0.4rem;
+    margin-right: -1.2rem;
+    z-index: 2;
+    border-radius: 0.3rem;
+    position: absolute;
+    right: 3rem;
+    overflow: hidden;
+    background-color:floralwhite;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#menu-toggle:checked ~ .small-nav {
+    max-height: 19rem;
+}
+
+@media (max-width: 1024px) {
+    .nav-links li {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: inline;
+    }
+
+    .big-nav {
+        display: none;
+    }
+
+    .small-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+
+

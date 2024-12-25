@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByteBrew</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/components/hero.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/pages/home.css">
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/footer.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+  </head>
+
+  <body>
+    <section class="hero">
+      <header class="header flex">
+        <div class="logo-container flex">
+          <img class="logo" src="../images/logo-brown.png" alt="ByteBrew Coffee Shop Logo" />
+          <p><a class="shop-name" href="home.html">ByteBrew</a></p>
+        </div>
+        <nav class="navigation">
+          <ul class="big-nav nav-links flex">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <input type="checkbox" id="menu-toggle" hidden />
+          <label for="menu-toggle" class="hamburger-menu">&#9776</label>
+          <div class="small-nav nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+        </nav>
+      </header>
+
+      <div class="hero-content fade-up flex flex-column">
+        <h1 class="hero-title autoShow">Welcome to ByteBrew</h1>
+        <p class="description autoShow">
+          where great coffee meets creative energy. Whether you're debugging
+          your latest project or just need a moment of calm, grab a cup and
+          let’s code the future, one sip at a time.
+        </p>
+        <a href="menu.html" class="cta-button">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <section id="slideshow" class="flex">
+        <div class="intro-content autoShow flex">
+            <h1>Experience the Perfect Brew</h1>
+            <p>Discover our unique blends and premium quality coffee.</p>
+        </div>
+        <div class="slider-wrapper autoShow">
+            <div class="slider flex">
+                <img id="slide-1" src="../images/coffee_image_1.webp" alt="Coffee cup with latte art">
+                <img id="slide-2" src="../images/coffee_image_2.webp" alt="Coffee cup on a table">
+                <img id="slide-3" src="../images/coffee_image_3.webp" alt="Coffee cup with a pastry">
+                <img id="slide-4" src="../images/pastries.webp" alt="Assorted pastries">
+            </div>
+        </div>
+        <div class="slider-content autoShow flex">
+            <h2>Our Coffee Menu</h2>
+            <p>Explore our selection of handcrafted beverages, from classic espresso to seasonal specials.</p>
+            <a href="menu.html" class="cta-button">Browse Menu</a>
+        </div>
+    </section>
+
+    <section id="atmosphere" class="flex">
+      <article class="container flex">
+        <img class="autoShow container-image" src="../images/atmosphere_3.webp" alt="Elegant café interior">
+        <div class="container-content flex">
+          <h2 class="autoShow">Experience the Warmth of Our Café</h2>
+          <p class="autoShow">Step into a space designed for comfort and connection. With its cozy wooden interiors, soft natural lighting, and a serene view of the bustling street outside, our café offers the perfect ambiance to unwind.</p>
+        </div>
+      </article>
+      <article class="container flex">
+        <div class="container-content flex">
+          <h2 class="autoShow">A Space for Every Moment</h2>
+          <p class="autoShow">Whether you're enjoying a quiet moment with a book, catching up with friends, or finding inspiration over a steaming cup of coffee, our inviting atmosphere makes every visit special.</p>
+        </div>
+        <img class="autoShow container-image" src="../images/atmosphere_2.webp" alt="Cozy café window view">
+      </article>
+      <article class="container flex">
+        <img class="autoShow container-image" src="../images/atmosphere.webp" alt="Classic Café atmosphere">
+        <div class="container-content flex">
+          <h2 class="autoShow">Elegant Tunes to Set the Mood</h2>
+          <p class="autoShow">Let the soothing sounds of our curated playlist elevate your coffee shop experience, creating the perfect backdrop for relaxation or focus. Prefer a quieter space? We've thoughtfully designed our café to ensure there's a spot for everyone.</p>
+          <a href="about_us.html" class="cta-button learn-more-button">Learn More</a>
+        </div>
+      </article>
+    </section>
+    <footer class="flex flex-column">
+      <div class="upper-footer flex">
+        <div class="footer-logo">
+          <img class="logo" src="../images/logo-white.png" alt="ByteBrew Logo">
+          <p class="slogan">Brewing Connections, One Cup at a Time.</p>
+        </div>
+        <div class="footer-nav footer-container flex flex-column">
+          <p class="quick-links">Quick links</p>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="footer-container flex flex-column">
+          <p class="connect-with-us">Connect with us</p>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/instagram.svg" alt="Instagram logo"><a href="#">Instagram</a>
+            </div>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/facebook.svg" alt="Facebook logo"><a href="#">Facebook</a>
+            </div>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/twitter.svg" alt="Twitter logo"><a href="#">Twitter</a>
+            </div>
+            <div class="social-media flex">
+              <img class="footer-icons" src="../images/linkedin.svg" alt="LinkedIn logo"><a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <form id="contact" class="subscribe" action="" method="">
+          <h3 class="title">Subscribe</h3>
+          <p>Subscribe for the latest updates!</p>
+          <label for="email"></label>
+          <input class="email" type="email" placeholder="Enter email address" title="Email address" name="email">
+          <input class="send-button" type="submit" value="subscribe">
+        </form>
+      </div>
+      <div class="lower-footer flex flex-column">
+        <div class="info-container flex">
+          <div class="info flex"><img class="footer-icons" src="../images/location.svg" alt="Location icon"><p class="address">Börringevägen 10, 233 33 Svedala</p></div>
+          <div class="info flex"><img class="footer-icons" src="../images/phone.svg" alt="Phone icon"><p class="phone-number">76 123 45 67</p></div>
+          <div class="info flex"><img class="footer-icons" src="../images/email.svg" alt="Email icon"><p class="email-address">ByteBrew@gmail.com</p></div>
+        </div>
+        <p class="copyright">© 2024 ByteBrew. All rights reserved.</p>
+      </div>
+  </footer>
+  </body>
+</html>

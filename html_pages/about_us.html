@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ByteBrew</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/components/hero.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/pages/about-us.css">
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/footer.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+  </head>
+  <body>
+    <section class="hero">
+        <div class="overlay"></div>
+        <header class="header flex">
+            <div class="logo-container flex">
+            <img class="logo" src="../images/logo-brown.png" alt="ByteBrew Coffee Shop Logo" />
+            <p><a class="shop-name" href="home.html">ByteBrew</a></p>
+            </div>
+            <nav class="navigation">
+            <ul class="big-nav nav-links flex">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <input type="checkbox" id="menu-toggle" hidden />
+            <label for="menu-toggle" class="hamburger-menu">&#9776</label>
+            <div class="small-nav nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </div>
+            </nav>
+        </header>
+        <div class="hero-content fade-up flex flex-column">
+            <h1 class="hero-title autoShow">About Us</h1>
+            <p class="description autoShow">
+                At ByteBrew, we’re more than just a coffee shop—we’re a community space built for dreamers, creators, and coffee enthusiasts.
+            </p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+    <section class="about-us">
+      <div class="story-container flex">
+        <div class="story">
+          <h2>From a small dream to a beloved gathering place, ByteBrew celebrates coffee, creativity, and connection.</h2>
+          <p>At ByteBrew, coffee is more than just a drink—it's the fuel that powers creativity and connection. Our journey began in 1982, when a group of passionate coffee lovers and tech enthusiasts came together with one vision: to create a space where ideas flow as freely as the coffee.
+            Nestled in the heart of Svedala, ByteBrew isn’t your average coffee shop. It’s a haven for thinkers, dreamers, and doers. Whether you're a developer debugging code, an artist sketching your next masterpiece, or someone simply savoring a quiet moment, ByteBrew is the perfect blend of inspiration and relaxation.
+            Our coffee is sourced from the finest beans around the globe, roasted to perfection, and served with care. But ByteBrew isn’t just about coffee—it’s about community. From coding meetups to book clubs and live music nights, we’re here to bring people together in a space that’s as warm as your favorite latte.
+            Every cup we serve tells a story of craftsmanship, passion, and a commitment to quality. And every corner of ByteBrew is designed to make you feel at home—from the cozy seating to the soft hum of productivity that fills the air.
+            Welcome to ByteBrew. Where great coffee meets big ideas.</p>
+          </div>
+          <div class="story-images flex flex-column">
+            <img class="old-images" src="../images/old-about-us-pic.webp" alt="Old photo of ByteBrew coffee shop">
+            <img class="old-images" src="../images/coffee-beans.jpg" alt="Close-up of coffee beans">
+          </div>
+      </div>
+      <div class="our-team flex flex-column">
+        <h1 class="our-team-header">Our Team</h1>
+        <div class="members flex">
+          <div class="member">
+            <img class="member-pic" src="../images/barista-image_1.avif" alt="Jack Carter, Barista">
+            <p class="member-name">Jack Carter</p>
+            <p class="member-comment">Jack's passion for crafting the perfect cup of coffee is evident in every espresso shot he pulls. With years of experience, Jack brings both skill and warmth to every customer interaction.</p>
+          </div>
+          <div class="member">
+            <img class="member-pic" src="../images/barista-image_2.jpg" alt="Sam Miller, Barista">
+            <p class="member-name">Sam Miller</p>
+            <p class="member-comment">Sam's creativity and dedication to the art of coffee-making make him a standout. Whether it's latte art or a new brew method, Sam loves sharing his expertise with our community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="flex flex-column">
+        <div class="upper-footer flex">
+          <div class="footer-logo">
+            <img class="logo" src="../images/logo-white.png" alt="ByteBrew Logo">
+            <p class="slogan">Brewing Connections, One Cup at a Time.</p>
+          </div>
+          <div class="footer-nav footer-container flex flex-column">
+            <p class="quick-links">Quick links</p>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+          <div class="footer-container flex flex-column">
+            <p class="connect-with-us">Connect with us</p>
+              <div class="social-media flex">
+                <img class="footer-icons" src="../images/instagram.svg" alt="Instagram logo"><a href="#">Instagram</a>
+              </div>
+              <div class="social-media flex">
+                <img class="footer-icons" src="../images/facebook.svg" alt="Facebook logo"><a href="#">Facebook</a>
+              </div>
+              <div class="social-media flex">
+                <img class="footer-icons" src="../images/twitter.svg" alt="Twitter logo"><a href="#">Twitter</a>
+              </div>
+              <div class="social-media flex">
+                <img class="footer-icons" src="../images/linkedin.svg" alt="LinkedIn logo"><a href="#">LinkedIn</a>
+              </div>
+          </div>
+          <form id="contact" class="subscribe" action="" method="">
+            <h3 class="title">Subscribe</h3>
+            <p>Subscribe for the latest updates!</p>
+            <label for="email"></label>
+            <input class="email" type="email" placeholder="Enter email address" title="Email address" name="email">
+            <input class="send-button" type="submit" value="subscribe">
+          </form>
+        </div>
+        <div class="lower-footer flex flex-column">
+          <div class="info-container flex">
+            <div class="info flex"><img class="footer-icons" src="../images/location.svg" alt="Location icon"><p class="address">Börringevägen 10, 233 33 Svedala</p></div>
+            <div class="info flex"><img class="footer-icons" src="../images/phone.svg" alt="Phone icon"><p class="phone-number">76 123 45 67</p></div>
+            <div class="info flex"><img class="footer-icons" src="../images/email.svg" alt="Email icon"><p class="email-address">ByteBrew@gmail.com</p></div>
+          </div>
+          <p class="copyright">© 2024 ByteBrew. All rights reserved.</p>
+        </div>
+    </footer>
+  </body>
+</html>

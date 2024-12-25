@@ -1,0 +1,101 @@
+.hero::before {
+  background-image: url('../../images/about-us-hero-image.webp');
+}
+
+
+.about-us {
+  background-color: floralwhite;
+}
+
+.story-container {
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.story-images {
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.old-images {
+  max-width: 25rem;
+  max-height: 20rem;
+  border-radius: 2rem;
+}
+
+.story {
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+.our-team{
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  gap: 2rem;
+}
+
+.our-team h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.members {
+  gap: 2rem;
+}
+
+.member {
+  text-align: center;
+  flex: 1;
+}
+
+.member-name {
+  font-weight: bold;
+}
+
+.member-pic {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 5rem;
+
+}
+
+@media(max-width: 1100px) {
+  .story-container {
+    flex-direction: column;
+  }
+  .story-images {
+    flex-direction: row;
+  }
+  .story {
+    width: 100%;
+  }
+}
+
+@media(max-width: 800px) {
+  .old-images {
+    min-width: 5rem;
+    min-height: 5rem;
+  }
+}
+
+@media(max-width: 650px) {
+  .story {
+    font-size: 1rem;
+  }
+
+  .member {
+    font-size: 1rem;
+  }
+
+  .members{
+    flex-direction: column;
+  }
+}
+
+

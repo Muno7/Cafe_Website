@@ -1,0 +1,58 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+
+body {
+    margin: 0;
+    font-family: 'Lora', sans-serif;
+    color: rgb(53, 15, 15);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(255, 250, 240, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+  }
+
+a {
+    text-decoration: none;
+    color: rgb(53, 15, 15);
+}
+
+.cta-button {
+    text-align: center;
+    font-size: 1.125rem;
+    background-color: rgb(53, 15, 15);
+    max-width: 9.375rem;
+    padding: 0.625rem;
+    color: #ecdec3;
+    border-radius: 0.625rem;
+    transition: background-color 0.1s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.cta-button:hover {
+    background-color: rgb(70, 20, 20);
+}
+
+.cta-button:active {
+    background-color: rgb(87, 25, 25);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .cta-button {
+        font-size: 1rem;
+    }
+}
